@@ -41,7 +41,7 @@ Follow these steps to set up and work on your project:
 - [x] Create a forked copy of this project.
 - [x] Add PM as collaborator on Github.
 - [x] Clone your OWN version of Repo. **(Not Lambda's by mistake!)**
-- [ ] Create a new Branch locally: `git checkout -b <firstName-lastName>`.
+- [X] Create a new Branch locally: `git checkout -b <firstName-lastName>`.
 
 - [X] Implement the project on this Branch, **committing progress & changes often.**
 - [X] Push commits: `git push origin <firstName-lastName>`.
@@ -59,11 +59,11 @@ Follow these steps for completing your project:
 
 Your finished project must include all of the following requirements:
 
-- [ ] A registration form built with formik - include inputs for a `username` and a `password`
-- [ ] Form validation using Yup
-- [ ] At least one class component (I would challenge you to make the form a class!)
-- [ ] Tests for at least one element, one event, and one unit test for a function
-- [ ] A POST request made from the registration form to `http://localhost:5000/api/register` to add a user - the request body should have the following shape:
+- [X] A registration form built with formik - include inputs for a `username` and a `password`
+- [X] Form validation using Yup
+- [X] At least one class component (I would challenge you to make the form a class!)
+- [X] Tests for at least one element, one event, and one unit test for a function
+- [X] A POST request made from the registration form to `http://localhost:5000/api/register` to add a user - the request body should have the following shape:
 
 ```js
 {
