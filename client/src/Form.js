@@ -38,10 +38,16 @@ const Forms = ({ errors, touched, values, status }) => {
 
                 <button type="submit">Submit</button>
             </Form>
+            <div>
+                {console.log(users)}
+                {users.map(users => users.map(users => {
+                    return <Onboarded key={users.name} data={users} />
+                }))}
+            </div>
         </div>
     )
 }
-
+// 
 const FormikForm = withFormik({
     mapPropsToValues({ username, password, }) {
         return {
@@ -60,17 +66,17 @@ const FormikForm = withFormik({
         axios
             .post('http://localhost:5000/api/register', values)
             .then(res => {
-                console.log(res.data)
+                // console.log(res.data)
             })
-            .catch(err => console.log(err.response));
+            .catch(err => err);
 
         axios
-            .get('http://localhost:5000/api/restricted/users')
+            .get('http://localhost:5000/api/restricted/data')
             .then(res => {
                 setStatus(res.data);
                 console.log(res.data)
             })
-            .catch(err => console.log(err.response));
+            .catch(err => err);
 
         resetForm()
     }
