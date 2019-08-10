@@ -24,15 +24,15 @@ In the challenge for this Sprint, you will demonstrate proficiency by creating a
 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
-- [ ] What are the required parts of class components?
+- [X] What are the required parts of class components?
 
-- [ ] Name at least three lifecycle methods?
+- [X] Name at least three lifecycle methods?
 
-- [ ] Why are forms used so often in web applications and software?
+- [X] Why are forms used so often in web applications and software?
 
-- [ ] What advantages are there by using a forms library like Formik?
+- [X] What advantages are there by using a forms library like Formik?
 
-- [ ] Why do we write tests for our apps?
+- [X] Why do we write tests for our apps?
 
 ## Project Set Up
 
@@ -82,9 +82,9 @@ and the response object will look like this:
 }
 ```
 
-- [ ] A GET request made to `http://localhost:5000/api/restricted/data` to retrieve the data
+- [X] A GET request made to `http://localhost:5000/api/restricted/data` to retrieve the data
 
-- [ ] Map over the array of objects you recieve and render some or all of it's information to the DOM.
+- [X] Map over the array of objects you recieve and render some or all of it's information to the DOM.
 
 ## Stretch Problems
 

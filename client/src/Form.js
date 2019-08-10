@@ -2,13 +2,12 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Form, Field, withFormik } from 'formik';
 import * as Yup from 'yup';
-
 import Onboarded from './Onboarded'
-
 
 export function sumOfTwoNum(num1, num2) {
     return num1 + num2
 }
+
 
 
 const Forms = ({ errors, touched, values, status }) => {
@@ -19,6 +18,8 @@ const Forms = ({ errors, touched, values, status }) => {
             setUsers([...users, status]);
         }
     }, [status]);
+
+
 
     return (
         <div className="animal-form">
@@ -44,7 +45,7 @@ const Forms = ({ errors, touched, values, status }) => {
                     return <Onboarded key={users.name} data={users} />
                 }))}
             </div>
-        </div>
+        </div >
     )
 }
 // 
@@ -66,7 +67,7 @@ const FormikForm = withFormik({
         axios
             .post('http://localhost:5000/api/register', values)
             .then(res => {
-                // console.log(res.data)
+                console.log(res.data)
             })
             .catch(err => err);
 

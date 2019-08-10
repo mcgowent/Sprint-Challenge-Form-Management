@@ -1,7 +1,6 @@
 import React from 'react'
+import { render, fireEvent } from '@testing-library/react'
 import "@testing-library/react/cleanup-after-each"
-import { render } from '@testing-library/react'
-
 import App from './App'
 
 
@@ -9,5 +8,12 @@ import App from './App'
 describe('<App />', () => {
   it('renders without crashing', () => {
     render(<App />)
+  })
+  it('strike check', () => {
+    let clicked = true
+    const { getByText } = render(<App ball={() => clicked = true} />)
+    const downButton = getByText(/ball/i)
+    fireEvent.click(downButton)
+    expect(clicked).toBe(true)
   })
 })

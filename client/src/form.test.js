@@ -8,11 +8,8 @@ describe('<Form/>', () => {
     it('renders without crashing', () => {
         render(<Form />)
     })
-    it('strike check', () => {
-        const { getByText } = render(<Form />)
-        getByText(/Submit/i)
-        //Checks Click Event
-    })
+
+
 })
 describe('subtract()', () => {
     it('Test my adding function', () => {
